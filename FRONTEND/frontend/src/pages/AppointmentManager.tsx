@@ -60,7 +60,7 @@ const AppointmentManager: React.FC = () => {
                     allMechanics.push(m);
                 });
 
-                appts.forEach((app: any) => {
+                appts?.length && appts.forEach((app: any) => {
                     if (app.mechanic && !mechanicIds.has(app.mechanic.id)) {
                         mechanicIds.add(app.mechanic.id);
                         allMechanics.push(app.mechanic);

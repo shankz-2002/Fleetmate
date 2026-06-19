@@ -1,7 +1,7 @@
 import nodemailer from 'nodemailer';
 
 
-export const sendResetEmail = async (email: any, resetLink: any) => {
+export const    sendResetEmail = async (email: any, resetLink: any) => {
     try {
         const transporter = nodemailer.createTransport({
             service: 'Gmail',

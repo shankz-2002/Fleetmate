@@ -18,7 +18,6 @@ export class CustomerProfile extends BaseEntity {
 
     @OneToOne(() => User, (user) => user.customerProfile, {
         onDelete: "CASCADE"
-
     })
     @JoinColumn()
     user: User;

@@ -12,9 +12,9 @@ import adminRouter from "./src/routes/adminRoute";
 import analysisRouter from "./src/routes/analysisRoute";
 const app = express();
 const PORT = 5000;
-app.use(cors());
 
-Connection()
+app.use(cors());
+Connection();
 
 app.use(express.json());
 app.use('/user', authRouter);
@@ -27,10 +27,12 @@ app.use('/mechanic', mechanicRouter);
 app.use('/admin', adminRouter);
 app.use('/analysis', analysisRouter);
 
-
+app.get('/dipin', (req, res) => {
+    res.send("dipin running")
+})
 
 
 app.listen(PORT, () => {
-    console.log(`server running `);
+    console.log(`server running at http://localhost:${PORT}`);
 
 })
