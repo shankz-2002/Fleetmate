@@ -21,22 +21,28 @@ FleetMate is a vehicle service management system that connects customers, mechan
 
 ## Running Locally
 
-Backend
+### Backend
 
-Backend
+```bash
 cd BACKEND
 npm install
 npm run start
-Frontend
+```
+
+### Frontend
+
+```bash
 cd FRONTEND
 cd frontend
 npm install
 npm run dev
+```
 
 Make sure PostgreSQL is running and the required environment variables are configured.
 
-Author
+## Author
 
 Ravi Shankar
 
 GitHub: https://github.com/shankz-2002
+
