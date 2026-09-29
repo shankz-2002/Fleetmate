@@ -13,8 +13,8 @@ export const AppDataSource = new DataSource({
     host: 'localhost',
     port: 5432,
     username: 'postgres',
-    password: 'Root@123',
-    database: 'FleetMate',
+    password: 'root@123',
+    database: 'fleetmate',
     synchronize: true,
     entities: [User,Vehicle,ResetToken,PartUsed,MechanicProfile,CustomerProfile,Bill,Appointment,]
 })
